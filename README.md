@@ -32,7 +32,14 @@ This project aims to develp a Machine learning model using machine readable text
 
 # Modeling
 
-Built two logistic regression models ,one using the pre-processed data using Count Vectorizer and the other using Tfid Vectorizer.The Logistic regression model with Count Ventorizer has better accuracy than Tfid Vectorizer. I expected the model with Tfid Vectorizer to perform better because it focuses on the importance of words in the text. So there is scope to tune this model. Will expore it in part 2 of the capstone
+Built 12 models (logistic regression, decision tree and Bayes) , using the pre-processed data with stemmed data & lemmatized data and using Count Vectorizer & Tfid Vectorizer.The Logistic regression model with stemmed data and Count Ventorizer has better accuracy(90%) than all the other models. Bayes models were much faster to fit but their accuracy was low compared to other models.Create a CNN model with Embedding layer,convolution layer, Max pooling layer,Dense layer,drop out layer and the output layer with sigmoid activation function. Plotting the losses , it seemed the model was overfitting. Applied early stopping to the model which resulted in an accuracy of 91% which was better than the logistic regression
 
-![image](https://github.com/manikrajan/Fin-news-sentiment-analysis/assets/6862254/104c6018-d8cd-4ca3-98e3-2f5bca5683fd)
+![image](https://github.com/manikrajan/Fin-news-sentiment-analysis/assets/6862254/177463b4-e08b-4cb6-973e-e45e8a66bc4f)
+
+# Evaluation
+
+- The logistic regression model with stemmed data and Count vectorizer performed better than the other models.
+- The CNN model had better accuracy than the Logistic regression model but it seems to overfit.
+- The data had 2264 news entries. The overfitting in the CNN model could be avoided if we had more data.
+
 
